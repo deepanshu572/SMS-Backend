@@ -1,0 +1,10 @@
+/* register.css */
+@keyframes draw{from{stroke-dashoffset:40}}
+.box.big{max-width:560px}
+.g2c{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.sm{display:block;height:5px;border-radius:9px;background:var(--line);overflow:hidden}
+.sm span{display:block;height:100%;width:0;background:var(--g2);transition:width .3s}
+.done{display:none;text-align:center;justify-items:center}
+.done.show{display:grid}
+.tick{animation:draw .6s .2s backwards}
+@media(max-width:560px){.g2c{grid-template-columns:1fr}}

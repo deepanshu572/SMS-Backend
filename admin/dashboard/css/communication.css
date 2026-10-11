@@ -1,0 +1,8 @@
+/* communication.css */
+.chat{display:grid;grid-template-columns:240px 1fr;gap:18px}
+.chat:hover{transform:none;box-shadow:none}
+.cl{display:flex;flex-direction:column;gap:6px}
+.cl button{display:flex;align-items:center;gap:10px;padding:10px;border-radius:14px;text-align:left;transition:background .2s}
+.cl button small{display:block;color:var(--mute);font-size:11px}
+.cl button.on,.cl button:hover{background:var(--soft)}
+@media(max-width:700px){.chat{grid-template-columns:1fr}.cl{flex-direction:row;overflow-x:auto}}

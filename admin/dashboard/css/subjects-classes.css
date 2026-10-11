@@ -1,0 +1,4 @@
+/* subjects-classes.css */
+.chip{padding:5px 11px;border-radius:999px;background:var(--bg);color:var(--mute);font-weight:700;font-size:12px;margin:2px;transition:.2s}
+.chip.on{background:var(--g1);color:#fff}
+#st td select{max-width:190px}

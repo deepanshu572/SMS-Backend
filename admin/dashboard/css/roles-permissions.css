@@ -1,0 +1,6 @@
+/* roles-permissions.css */
+.tg{width:44px;height:26px;border-radius:999px;background:var(--line);position:relative;transition:.25s}
+.tg::after{content:"";position:absolute;top:3px;left:3px;width:20px;height:20px;border-radius:50%;background:#fff;transition:.25s}
+.tg.on{background:var(--g2)}.tg.on::after{left:21px}
+.tg[disabled]{opacity:.5;cursor:not-allowed}
+#rt th,#rt td{text-align:center}#rt th:first-child,#rt td:first-child{text-align:left;font-weight:600}

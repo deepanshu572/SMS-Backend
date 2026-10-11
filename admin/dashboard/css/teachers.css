@@ -1,0 +1,5 @@
+/* teachers.css */
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:16px}
+.person{text-align:center}
+.person .av{width:60px;height:60px;margin:0 auto 10px;font-size:18px}
+.person small{display:block;color:var(--mute);margin-bottom:10px}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log in · EduNexa</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body data-page="login">
+  <div class="auth">
+    <section class="brand">
+      <span class="orb" style="width:260px;height:260px;right:-70px;top:-70px"></span>
+      <span class="orb" style="width:160px;height:160px;left:40px;bottom:130px;animation-delay:-3s"></span>
+      <span class="orb" style="width:90px;height:90px;right:100px;bottom:60px;animation-delay:-6s"></span>
+      <div class="logo"><i>E</i> EduNexa</div>
+      <div>
+        <h2>Run your whole school from one calm place.</h2>
+        <p>Log in as an admin, teacher, student or parent to see what matters to you.</p>
+        <div class="pts"><span>Attendance, fees and homework in one place</span><span>Separate access for admin,
+            teacher, student and parent</span><span>Works on phones and desktops</span></div>
+      </div>
+      <small>© EduNexa</small>
+    </section>
+    <main class="formside">
+      <form class="box" id="lf">
+        <div>
+          <h1>Welcome back</h1>
+          <p class="sub">Log in to your school account.</p>
+        </div>
+        <div class="roles" id="roles" role="group" aria-label="Role"><span class="pillbg"></span><button type="button"
+            class="on" data-r="admin">Admin</button><button type="button" data-r="teacher">Teacher</button><button
+            type="button" data-r="student">Student</button><button type="button" data-r="parent">Parent</button></div>
+        <label>Email<input class="inp" id="em" type="email" autocomplete="username" required></label>
+        <label>Password<span class="pw"><input class="inp" id="pw" type="password" autocomplete="current-password"
+              required><button type="button" id="eye">Show</button></span></label>
+        <div class="opts"><label class="ck"><input type="checkbox" id="rm"> Remember me</label><button type="button"
+            class="tag" id="demo">Use demo login</button></div>
+        <div class="err" id="err" role="alert"></div>
+        <button class="btn fill wide" id="go">Log in as Admin</button>
+        <p class="alt">New school? <a href="register.html">Register your school</a></p>
+      </form>
+    </main>
+  </div>
+  <script src="js/auth.js"></script>
+</body>
+
+</html>

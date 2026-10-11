@@ -1,0 +1,7 @@
+/* classes.css */
+.cls{display:flex;flex-direction:column;gap:12px}
+.ct{display:flex;align-items:center;gap:12px}.ct h3{margin:0}.ct small{color:var(--mute)}
+.cs b{font-size:30px}.cs small{color:var(--mute);margin-left:4px}
+.fb{height:8px;border-radius:9px;background:var(--line);overflow:hidden}
+@keyframes w{from{width:0}}
+.fb span{display:block;height:100%;background:var(--g2);border-radius:9px;animation:w 1.1s .3s backwards}

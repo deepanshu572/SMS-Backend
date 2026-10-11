@@ -1,0 +1,5 @@
+/* notice-board.css */
+.notes{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;margin-top:16px}
+.note p{color:var(--mute);line-height:1.5;margin-bottom:12px}
+.nf{display:flex;justify-content:space-between;align-items:center}.nf small{color:var(--mute)}
+.note.pin{border-left:4px solid var(--g2)}

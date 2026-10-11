@@ -1,0 +1,5 @@
+/* study-materials.css */
+.mc{display:flex;flex-direction:column;gap:8px}.mc small{color:var(--mute)}
+.mk{height:90px;border-radius:14px;display:grid;place-items:center;font-weight:800;color:#fff;background:linear-gradient(120deg,var(--g2),var(--g1))}
+.mk.Video{background:linear-gradient(120deg,#c2410c,#9a3412)}.mk.Slides{background:linear-gradient(120deg,#4a3a9a,#2e2370)}
+.mb{display:flex;gap:8px;margin-top:4px}

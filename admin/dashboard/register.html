@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Register your school · EduNexa</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/register.css">
+</head>
+<body data-page="register">
+<div class="auth">
+  <section class="brand">
+    <span class="orb" style="width:260px;height:260px;right:-70px;top:-70px"></span>
+    <span class="orb" style="width:160px;height:160px;left:40px;bottom:130px;animation-delay:-3s"></span>
+    <span class="orb" style="width:90px;height:90px;right:100px;bottom:60px;animation-delay:-6s"></span>
+    <div class="logo"><i>E</i> EduNexa</div>
+    <div>
+      <h2>Set up your school in a minute.</h2>
+      <p>Add your school details and create the admin account. Teachers, students and parents come next.</p>
+      <div class="pts"><span>Attendance, fees and homework in one place</span><span>Separate access for admin, teacher, student and parent</span><span>Works on phones and desktops</span></div>
+    </div>
+    <small>© EduNexa</small>
+  </section>
+  <main class="formside">
+    <form class="box big" id="rf">
+      <div><h1>Register your school</h1><p class="sub">Create your school account. You will be its admin.</p></div>
+      <div class="g2c"><label>School name<input class="inp" id="rs" required></label><label>Board<select id="rt"><option>CBSE</option><option>ICSE</option><option>State Board</option><option>Other</option></select></label></div>
+      <div class="g2c"><label>City<input class="inp" id="rc" required></label><label>Phone<input class="inp" id="rph" type="tel" required></label></div>
+      <div class="g2c"><label>Admin name<input class="inp" id="rn" autocomplete="name" required></label><label>Admin email<input class="inp" id="rem" type="email" autocomplete="username" required></label></div>
+      <div class="g2c"><label>Password<input class="inp" id="rpw" type="password" autocomplete="new-password" required><span class="sm"><span id="sm"></span></span></label><label>Confirm password<input class="inp" id="rpw2" type="password" autocomplete="new-password" required></label></div>
+      <label class="ck"><input type="checkbox" required> I agree to the terms and privacy policy</label>
+      <div class="err" id="err" role="alert"></div>
+      <button class="btn fill wide">Register school</button>
+      <p class="alt">Already registered? <a href="login.html">Log in</a></p>
+    </form>
+    <div class="box done" id="done"><svg viewBox="0 0 52 52" width="72" height="72"><circle cx="26" cy="26" r="24" fill="none" stroke="var(--g2)" stroke-width="3"/><path class="tick" d="M14 27l8 8 16-17" fill="none" stroke="var(--g2)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="40"/></svg><h1>School registered</h1><p class="sub">Taking you to your dashboard...</p></div>
+  </main>
+</div>
+<script src="js/auth.js"></script>
+</body>
+</html>

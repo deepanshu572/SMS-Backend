@@ -1,0 +1,4 @@
+/* ai-assistant.css */
+.ai:hover{transform:none;box-shadow:none}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+.chips .tag{padding:7px 13px;font-size:12px;transition:transform .2s}.chips .tag:hover{transform:translateY(-2px)}

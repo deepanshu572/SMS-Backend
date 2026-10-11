@@ -1,0 +1,37 @@
+/* timetable.css */
+.lgd{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px;animation:up .5s .1s backwards}
+.lg{padding:6px 14px;border-radius:999px;font-weight:700;font-size:13px;border:1.5px solid;transition:transform .2s,box-shadow .2s}
+.lg:hover{transform:translateY(-2px)}
+.lg.on{box-shadow:0 0 0 2px var(--ink)}
+.c0{background:#e8f0fd;border-color:#bfd3f7;color:#2a5bd7}
+.c1{background:#f3ecfd;border-color:#dcc9f7;color:#7a3bd1}
+.c2{background:var(--card);border-color:var(--ink);color:var(--ink)}
+.c3{background:#e3f7ee;border-color:#9be0bf;color:#1b8a5a}
+.c4{background:#fdf0e2;border-color:#f6cf9f;color:#c2680f}
+.c5{background:#e6effa;border-color:#b9d0f2;color:#2f66c2}
+.c6{background:#fbe8f1;border-color:#f2bcd6;color:#b0306b}
+.c7{background:#fde9e0;border-color:#f6bfa6;color:#c4481b}
+.tbl{padding:0;overflow:hidden}
+.tbl:hover{transform:none;box-shadow:none}
+#tt{min-width:880px;border-collapse:separate;border-spacing:0}
+#tt th{padding:14px 10px;text-align:center;font-size:12px;letter-spacing:.08em;color:var(--mute);background:var(--soft)}
+#tt th:first-child{text-align:left;padding-left:18px}
+#tt th.today{background:var(--g2);color:#fff}
+#tt td{padding:8px;border-top:1px solid var(--line);text-align:center;vertical-align:middle}
+#tt td.today{background:color-mix(in srgb,var(--soft) 50%,transparent)}
+#tt td.pt{text-align:left;white-space:nowrap;padding-left:18px}
+.pt b{display:block}.pt small{color:var(--mute)}
+tr.brk td{background:var(--soft);font-style:italic;color:var(--mute)}
+tr.brk td.pt{font-style:normal;color:var(--ink)}
+.cell{width:100%;min-height:64px;border-radius:14px;border:1.5px solid;padding:8px 6px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:2px;transition:transform .2s,box-shadow .2s}
+.cell:hover{transform:translateY(-3px) scale(1.03);box-shadow:0 8px 18px #0f4d2b26}
+.cell b{font-size:14px;line-height:1.2}.cell small{font-size:12px;opacity:.8}
+.cell.none{background:none;border:1.5px dashed var(--line);color:var(--mute);font-weight:700}
+.cell.hl{outline:3px solid var(--ink);outline-offset:1px}
+.ro .cell{pointer-events:none}
+.mbox label{display:grid;gap:6px;font-weight:600;font-size:13px}
+.mbox select{width:100%}
+.mbox.wd{max-width:640px;max-height:90vh;overflow:auto}
+.pr{display:grid;grid-template-columns:1.1fr 1.2fr 96px 36px;gap:8px;margin-bottom:8px}
+.pr .inp,.pr select{width:100%}
+@media(max-width:600px){.pr{grid-template-columns:1fr 1fr}}

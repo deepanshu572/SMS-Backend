@@ -1,0 +1,20 @@
+/* dashboard.css */
+@keyframes arc{from{stroke-dasharray:0 251.3}}
+@keyframes shift{to{background-position:100% 0}}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:16px}
+.stat b{display:block;font-size:34px;margin:6px 0 4px;letter-spacing:-.02em}
+.stat small{color:var(--mute)}
+.stat.hot,.ti{background:linear-gradient(120deg,var(--g2),var(--g1),var(--g2));background-size:200% 100%;color:#fff;animation:up .55s backwards,shift 7s ease-in-out infinite alternate}
+.stat.hot small,.ti small{color:#cfeedd}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;grid-template-areas:"an an re pr" "te pg ti pr"}
+.an{grid-area:an}.re{grid-area:re}.pr{grid-area:pr}.te{grid-area:te}.pg{grid-area:pg}.ti{grid-area:ti}
+.remind{font-size:17px;font-weight:700;margin:6px 0 4px}
+.gauge{text-align:center}
+.gauge svg{width:100%;max-width:200px}
+.arc{animation:arc 1.4s .4s cubic-bezier(.2,.9,.3,1) backwards}
+.gauge b{display:block;font-size:30px;margin-top:-46px}
+.gauge small{display:block;color:var(--mute);margin-top:6px}
+.clock{font-size:32px;font-weight:800;font-variant-numeric:tabular-nums;margin:10px 0 8px}
+.live{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--g3);margin-right:8px;animation:pulse 1.4s infinite}
+@media(max-width:1180px){.grid{grid-template-columns:repeat(2,1fr);grid-template-areas:"an an" "re pr" "te pg" "ti ti"}.stats{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.grid{grid-template-columns:1fr;grid-template-areas:"an" "re" "pr" "te" "pg" "ti"}.stat b{font-size:28px}}

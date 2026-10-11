@@ -1,0 +1,6 @@
+/* students.css */
+@keyframes w{from{width:0}}
+.add{display:flex;gap:10px;margin-bottom:14px;flex-wrap:wrap}
+.meter{display:inline-block;width:70px;height:7px;border-radius:9px;background:var(--line);vertical-align:middle;overflow:hidden;margin-right:6px}
+.meter span{display:block;height:100%;background:var(--g2);animation:w 1s backwards}
+.empty{text-align:center;color:var(--mute);padding:26px}
